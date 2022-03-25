@@ -23,7 +23,6 @@ class Scard extends React.Component {
         <Col></Col>
         <Col></Col>
         <Col></Col>
-        <Col></Col>
         </Row>
           </Card.Body>
         </Card>
