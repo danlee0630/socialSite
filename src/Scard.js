@@ -3,6 +3,8 @@ import Card from 'react-bootstrap/Card';
 import Image from 'react-bootstrap/Image'
 import Likes from './Likes'
 import Dislikes from './disLikes';
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
 
 class Scard extends React.Component {
 
@@ -15,12 +17,18 @@ class Scard extends React.Component {
           <Image fluid className="mx-auto" src={this.props.img} width="400px" alt={this.props.alt} />
           <Card.Body>
             <Card.Text>{this.props.text}</Card.Text>
-            {/* this is for like function */}
-            <Likes no={this.props.likes} likeaction={this.props.likeaction} postId={this.props.postId} />
-            {/* like function ends here */}
-            <Dislikes no={this.props.dislikes} dislikeaction={this.props.dislikeaction} postId={this.props.postId} />
+        <Row xs="auto">
+        <Likes no={this.props.likes} likeaction={this.props.likeaction} postId={this.props.postId} />
+        <Dislikes no={this.props.dislikes} dislikeaction={this.props.dislikeaction} postId={this.props.postId} />
+        <Col></Col>
+        <Col></Col>
+        <Col></Col>
+        <Col></Col>
+        </Row>
           </Card.Body>
         </Card>
+
+
       </>
     );
   }

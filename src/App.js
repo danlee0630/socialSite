@@ -3,16 +3,15 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Container from 'react-bootstrap/Container';
-import './App.css';
 import View from './View'
 import Add from './Add'
 import FaceTube from './FaceTube.png'
-import {
-  HashRouter as Router,
-  Routes,
-  Route,
-  Link
-} from "react-router-dom";
+import './App.css';
+import {  BrowserRouter as Router,
+          Routes,
+          Route,
+          Link
+        } from "react-router-dom";
 
 
 class App extends React.Component {

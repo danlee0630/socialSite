@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'react-bootstrap/Image'
-import Table from 'react-bootstrap/Table'
 import DislikeIcon from './dislike.png'
+import Col from 'react-bootstrap/Col'
 
 class Dislikes extends React.Component {
 
@@ -12,18 +12,10 @@ class Dislikes extends React.Component {
   render() {
     return (
       <>
-        <Table>
-          <tbody>
-            <tr>
-              <td>
-                <Image onClick={() => this.dislikesClickHandler()} fluid className="mx-auto" src={DislikeIcon} width="30px" alt="dislike logo" />
-              </td>
-              <td>
-                {this.props.no}
-              </td>
-            </tr>
-          </tbody>
-        </Table>
+      <Col>
+        <Image onClick={() => this.dislikesClickHandler()} fluid className="mx-auto" src={DislikeIcon} width="30px" alt="dislike logo" />
+        {this.props.no}
+        </Col>
       </>
     );
   }

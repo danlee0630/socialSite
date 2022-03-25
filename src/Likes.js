@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'react-bootstrap/Image'
-import Table from 'react-bootstrap/Table'
 import LikeIcon from './like.png'
+import Col from 'react-bootstrap/Col'
 
 class Likes extends React.Component {
 
@@ -12,18 +12,10 @@ class Likes extends React.Component {
   render() {
     return (
       <>
-        <Table>
-          <tbody>
-            <tr>
-              <td>
-                <Image onClick={() => this.likesClickHandler()} fluid className="mx-auto" src={LikeIcon} width="30px" alt="like logo" />
-              </td>
-              <td>
+      <Col>
+        <Image onClick={() => this.likesClickHandler()} fluid className="mx-auto" src={LikeIcon} width="30px" alt="like logo" />
                 {this.props.no}
-              </td>
-            </tr>
-          </tbody>
-        </Table>
+                </Col>
       </>
     );
   }
