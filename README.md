@@ -1,6 +1,6 @@
-# Todo list Starter App
+# Social Site React App Project
 
-This is a full starter set up for the Todo app used in week 7
+This is a full Social Site app used in week 5
 
 To use this app: 
 1. Use this template to create your own repository.
